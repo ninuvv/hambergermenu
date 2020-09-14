@@ -1,0 +1,33 @@
+@media only screen and (max-width:1006px){
+    nav{flex-direction: column;
+    transition: all 0.7s ease-out;
+    height: 447px;
+}
+
+.nav_list{flex-direction: column;}
+.nav_right{text-align: center;}
+.burger {display: block;}
+.h_nav{height: 36px;}
+.v_cls{opacity: 0;}
+.container{
+   flex-wrap: wrap-reverse;
+    }
+    .Secondhalf{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:900px){
+
+    .divsection{
+    
+        flex-wrap: wrap-reverse;
+    }
+   
+
+.contactcontainer input, textarea {
+    width: 75%;}
+
+    /* submit button respo nt done 
+    input text alse not done */
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Gardens</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav bgh h_nav">
+            <ul class="nav_list v_cls">
+                <div class="logo"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM68P_KaMsGN8bDWWVBvlXBj71UEBH-BGtlg&usqp=CAU"
+                        alt=""></div>
+                <li><a href="#Home"> Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li> <a href="#Contact">Contact</a> </li>
+
+            </ul>
+            <div class="nav_right v_cls">
+                <input type="text" name="search" id="search">
+                <button class="btn btn_sn">Search</button>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <section class="bg firstsection">
+        <div class="container">
+            <div class="firsthalf">
+                <h1>Flowwer Garden In Dammam.</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi expedita animi corporis veniam ea?
+                    Explicabo laboriosam eos, .</p>
+                <div class="buttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">watch video</button>
+                </div>
+            </div>
+            <div class="Secondhalf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM68P_KaMsGN8bDWWVBvlXBj71UEBH-BGtlg&usqp=CAU"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="divsection">
+        <div class="paraghs">
+            <h1>Rose Garden</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus eius beatae hic veniam
+                dolorum sequi ducimus praesentium porro, nesciunt optio possimus. Accusantium error similique
+                necessitatibus fugit, reiciendis nesciunt explicabo neque amet repellendus beatae! Veniam eos nam minus
+                exercitationem commodi repellat veritatis nobis quis, velit tenetur asperiores, laboriosam modi
+                ea!lorem34
+
+
+            </p>
+        </div>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM68P_KaMsGN8bDWWVBvlXBj71UEBH-BGtlg&usqp=CAU"
+                alt="">
+        </div>
+    </section>
+
+
+    <section class="divsection divleft">
+        <div class="paraghs">
+            <h1>Rose Garden</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus eius beatae hic veniam
+                dolorum sequi ducimus praesentium porro, nesciunt optio possimus. Accusantium error similique
+                necessitatibus fugit, reiciendis nesciunt explicabo neque amet repellendus beatae! Veniam eos nam minus
+                exercitationem commodi repellat veritatis nobis quis, velit tenetur asperiores, laboriosam modi
+                ea!lorem34
+
+
+            </p>
+        </div>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM68P_KaMsGN8bDWWVBvlXBj71UEBH-BGtlg&usqp=CAU"
+                alt="">
+        </div>
+    </section>
+
+
+    <section class="divsection">
+        <div class="paraghs">
+            <h1>Rose Garden</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates delectus eius beatae hic veniam
+                dolorum sequi ducimus praesentium porro, nesciunt optio possimus. Accusantium error similique
+                necessitatibus fugit, reiciendis nesciunt explicabo neque amet repellendus beatae! Veniam eos nam minus
+                exercitationem commodi repellat veritatis nobis quis, velit tenetur asperiores, laboriosam modi
+                ea!lorem34
+
+
+            </p>
+        </div>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM68P_KaMsGN8bDWWVBvlXBj71UEBH-BGtlg&usqp=CAU"
+                alt="">
+        </div>
+    </section>
+    <section class="contact">
+        <h2 class="head">Contact me</h2>
+        <div class="contactcontainer">
+        <form id="submit-form" action="">
+            <input type="text" name="fname" id="name" placeholder="Enter your name">
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone no">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+            <button class="btn">Submit</button>
+
+           
+        </form>
+ </div>
+
+
+        
+    </section>
+
+
+    <footer>
+        copyright &COPY; 2020:All rights reserved
+    </footer>
+
+    <script src="js/resp.js"></script>
+
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                // url:"https://script.google.com/macros/s/AKfycbxMOTcxWn2inPxA3_f6gKX13kNbO11uzrxfcoF-HUfIilAFxuU/exec",
+                url:"https://script.google.com/macros/s/AKfycbxaDqLKFn5VFFmXZhQhuDT7-mhHLldMARzY99sN/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
